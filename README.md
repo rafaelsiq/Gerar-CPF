@@ -3,7 +3,7 @@ Esse programa gera CPFs validos apartir de uma fração fornecida
 Para isto, basta digitar a Fração do CPF conhecida e substituir por "X" os digitos desconhecidos
 exemplo:
 
-01X4322X8X4
+01X4322X8X4  
   GERANDO:  
 010.432.268-34  
 011.432.288-04  
