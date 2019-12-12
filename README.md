@@ -4,7 +4,7 @@ Para isto, basta digitar a Fração do CPF conhecida e substituir por "X" os dig
 exemplo:
 
 01X4322X8X4
-
+  GERANDO:  
 010.432.268-34  
 011.432.288-04  
 013.432.218-54  
