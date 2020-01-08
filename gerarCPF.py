@@ -96,11 +96,12 @@ def substituirCPF(cpf):
         CPFgera = CPF_temp
         return CPFgera
 if __name__ == "__main__":
-   # arg1 = sys.argv[1]
     CPForiginal =[]
-    print(sys.argv)
-    
-    cpf = raw_input("Digite um CPF substituindo por X os digitos desconhecidos:\nNão use pontos\n")
+    if sys.argv.__len__() <2:
+    	cpf = raw_input("\nDigite um CPF substituindo por X os digitos desconhecidos:\nNão use pontos\n")
+    else:
+	cpf = sys.argv[1]
+
     if (len(cpf) == 11):
         CPForiginal = substituirCPF(cpf.upper())
     
