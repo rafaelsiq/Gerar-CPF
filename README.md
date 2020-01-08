@@ -1,10 +1,16 @@
 # Gerar-CPF
 Esse programa gera CPFs validos apartir de uma fração fornecida
 Para isto, basta digitar a Fração do CPF conhecida e substituir por "X" os digitos desconhecidos
-exemplo:
+
+Edit.1.>
+  É possivel passar por parametro do sistema a fração do CPF obtida: 
+  E.x.: " python2 ./gerarCPF.py 012x3x456x9 "
+
+E.x.:
 
 01X4322X8X4  
-  GERANDO:  
+
+GERANDO:  
 010.432.268-34  
 011.432.288-04  
 013.432.218-54  
