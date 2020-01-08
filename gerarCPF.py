@@ -1,9 +1,8 @@
-#/usr/bin/python3
+#/usr/bin/python2
 # -*- coding:UTF-8 -*-
 import re
-
+import sys
 _translate = lambda cpf: ''.join(re.findall("\d", cpf))
-
 def _exceptions(cpf):
     if len(cpf)!=11:
         return True
@@ -71,8 +70,6 @@ class Util(object):
             d1,d2,i=(d1+(int(cpf[i])*(11-i-1)))%11 if i<9 else d1,(d2+(int(cpf[i])*(11-i)))%11,i+1
         return (int(cpf[9])==(11-d1 if d1>1 else 0)) and (int(cpf[10])==(11-d2 if d2>1 else 0))
 
-cpf = ["00000000500", "11111111181"]
-
 def substituirCPF(cpf):
     contador=int(0)
     if cpf.find("x".upper()) != -1:
@@ -99,8 +96,14 @@ def substituirCPF(cpf):
         CPFgera = CPF_temp
         return CPFgera
 if __name__ == "__main__":
-    cpf = raw_input("Digite um CPF substituindo por X os digitos desconhecidos:\n\n")
-    CPForiginal = (substituirCPF(cpf))
+   # arg1 = sys.argv[1]
+    CPForiginal =[]
+    print(sys.argv)
+    
+    cpf = raw_input("Digite um CPF substituindo por X os digitos desconhecidos:\nNão use pontos\n")
+    if (len(cpf) == 11):
+        CPForiginal = substituirCPF(cpf.upper())
+    
     print("\n")
     contador = 0
     for i in CPForiginal:
