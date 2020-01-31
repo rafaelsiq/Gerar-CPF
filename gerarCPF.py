@@ -99,8 +99,8 @@ if __name__ == "__main__":
     CPForiginal =[]
     if sys.argv.__len__() <2:
     	cpf = raw_input("\nDigite um CPF substituindo por X os digitos desconhecidos:\nNão use pontos\n")
-    else:
-	cpf = sys.argv[1]
+    #else:
+	#cpf = sys.argv[1]
 
     if (len(cpf) == 11):
         CPForiginal = substituirCPF(cpf.upper())
